@@ -1,16 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartNewGame : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+	public Animator animator;
+
+	public void PlayGameClicked( ){
+		animator.SetBool("Exit",true);
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public void FinishedTransition(){
+		SceneManager.LoadScene(1);
 	}
 }
