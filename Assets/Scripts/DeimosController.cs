@@ -22,7 +22,7 @@ public class DeimosController : MonoBehaviour {
 		player.velocity = new Vector2(Input.GetAxis("Horizontal")*moveSpeed, player.velocity.y);
 	}
 	void OnTriggerEnter2D( Collider2D col ) {
-		SmallMonsters monster = col.gameObject.GetComponent<SmallMonsters>();
+		SmallMonster monster = col.gameObject.GetComponent<SmallMonster>();
 		if( monster != null ) {
 			health -= monster.dmg;
 			Destroy( monster.gameObject );
