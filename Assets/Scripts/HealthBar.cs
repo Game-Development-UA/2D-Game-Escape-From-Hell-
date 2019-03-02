@@ -10,10 +10,4 @@ public class HealthBar : MonoBehaviour
         Transform bar  = transform.Find("Health");
         bar.localScale = new Vector3(.4f,1f);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
