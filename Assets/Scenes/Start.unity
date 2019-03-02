@@ -20023,7 +20023,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256242948}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -20179,7 +20179,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1424893774}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -20431,7 +20431,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572853944}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -20741,9 +20741,9 @@ GameObject:
   - component: {fileID: 1826340028}
   - component: {fileID: 1826340030}
   - component: {fileID: 1826340031}
-  - component: {fileID: 1826340032}
   - component: {fileID: 1826340034}
   - component: {fileID: 1826340033}
+  - component: {fileID: 1826340032}
   m_Layer: 0
   m_Name: Deimos
   m_TagString: Untagged
@@ -20878,13 +20878,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8059407720b0d49be8a75cdb1908f78a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1826340030}
-  moveSpeed: 10
-  animator: {fileID: 1826340033}
-  moveThreshHold: 1
-  jumpPower: 7
+  player: {fileID: 0}
+  moveSpeed: 0
+  animator: {fileID: 0}
+  moveThreshHold: 0
+  jumpPower: 0
+  health: 0
 --- !u!95 &1826340033
 Animator:
   serializedVersion: 3
@@ -21006,7 +21005,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081074464}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0

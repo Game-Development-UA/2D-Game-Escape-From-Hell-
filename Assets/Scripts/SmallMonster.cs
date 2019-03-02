@@ -7,9 +7,9 @@ public class SmallMonster : MonoBehaviour
 
 	public float hp;
 	public float dmg;
-	void OnTriggerEnter2D( Collider2D col ) {
+	/*void OnTriggerEnter2D( Collider2D col ) {
 		Deimos deimos = col.gameObject.GetComponent<Deimos>();
 		hp--;
-		deimos.transform
-	}
+		//deimos.transform = Vector3();
+	}*/
 }

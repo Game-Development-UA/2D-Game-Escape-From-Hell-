@@ -25,7 +25,7 @@ public class DeimosController : MonoBehaviour {
 		SmallMonsters monster = col.gameObject.GetComponent<SmallMonsters>();
 		if( monster != null ) {
 			health -= monster.dmg;
-			Destroy( health.gameObject );
+			Destroy( monster.gameObject );
 		}
 	}
 }
