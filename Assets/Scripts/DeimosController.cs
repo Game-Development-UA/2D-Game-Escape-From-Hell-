@@ -16,11 +16,16 @@ public class DeimosController : MonoBehaviour {
 		if( Input.GetButtonDown("Jump") ) {
 			player.AddForce( new Vector2( 0f, jumpPower ), ForceMode2D.Impulse );
 		}
+		if (Input.GetMouseButtonDown(0))
+        	animator.SetBool("Attack",true);
+        else
+        	animator.SetBool("Attack",false);
 	}
 	// Update is called once per frame
 	void FixedUpdate () {
 		player.velocity = new Vector2(Input.GetAxis("Horizontal")*moveSpeed, player.velocity.y);
 	}
+
 	void OnTriggerEnter2D( Collider2D col ) {
 		SmallMonster monster = col.gameObject.GetComponent<SmallMonster>();
 		if( monster != null ) {
