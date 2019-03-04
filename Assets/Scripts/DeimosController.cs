@@ -13,7 +13,15 @@ public class DeimosController : MonoBehaviour {
 	public float damage;
 	public float stunnedVelocityThreshold;
 
-	bool stunned;
+	public int maxAttacks;
+
+	public Transform attackSpawnLoc;
+
+	public DeimosAttack attackPrefab;
+
+	public List<DeimosAttack> attacks = new List<DeimosAttack>();
+
+	bool stunned;	
 
 	void Update(){
 		if( stunned ) {
@@ -24,8 +32,15 @@ public class DeimosController : MonoBehaviour {
 		if( Input.GetButtonDown("Jump") ) {
 			player.AddForce( new Vector2( 0f, jumpPower ), ForceMode2D.Impulse );
 		}
-		if (Input.GetMouseButtonDown(0))
+		if (Input.GetMouseButtonDown(0)){
+			if( attacks.Count < maxAttacks ) {
+				DeimosAttack newAttack = Instantiate<DeimosAttack>( attackPrefab );
+				newAttack.transform.position = attackSpawnLoc.position;
+				newAttack.deimos = this;
+				attacks.Add(newAttack);
+			}
         	animator.SetBool("Attack",true);
+		}
         else
         	animator.SetBool("Attack",false);
 	}
@@ -55,5 +70,8 @@ public class DeimosController : MonoBehaviour {
 		if( forceToPush > 0f ) {
 			stunned = true;
 		}
+	}
+	public void DestroyAttack( DeimosAttack attackDestroyed ) {
+		attacks.Remove( attackDestroyed );
 	}
 }
