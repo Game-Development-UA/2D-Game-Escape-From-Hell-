@@ -20053,7 +20053,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -20141,6 +20141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   dmg: 1
+  push: 5
 --- !u!1 &1265578916
 GameObject:
   m_ObjectHideFlags: 0
@@ -20234,7 +20235,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -20322,6 +20323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   dmg: 1
+  push: 5
 --- !u!1 &1553765351
 GameObject:
   m_ObjectHideFlags: 0
@@ -20544,7 +20546,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -20632,6 +20634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   dmg: 1
+  push: 5
 --- !u!1 &1604875692
 GameObject:
   m_ObjectHideFlags: 0
@@ -21014,6 +21017,8 @@ MonoBehaviour:
   moveThreshHold: 1
   jumpPower: 5
   health: 10
+  damage: 1
+  stunnedVelocityThreshold: 5
 --- !u!95 &1826340033
 Animator:
   serializedVersion: 3
@@ -21125,7 +21130,7 @@ PolygonCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -21184,6 +21189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   dmg: 1
+  push: 5
 --- !u!1001 &1050719401335392416
 PrefabInstance:
   m_ObjectHideFlags: 0

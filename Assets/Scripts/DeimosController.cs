@@ -16,7 +16,6 @@ public class DeimosController : MonoBehaviour {
 	bool stunned;
 
 	void Update(){
-
 		if( stunned ) {
 			if( player.velocity.sqrMagnitude < stunnedVelocityThreshold ) stunned = false;
 		}
