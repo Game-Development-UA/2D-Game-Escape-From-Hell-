@@ -38,8 +38,8 @@ public class DeimosController : MonoBehaviour {
 				newAttack.transform.position = attackSpawnLoc.position;
 				newAttack.deimos = this;
 				attacks.Add(newAttack);
+				animator.SetBool("Attack",true);
 			}
-        	animator.SetBool("Attack",true);
 		}
         else
         	animator.SetBool("Attack",false);
