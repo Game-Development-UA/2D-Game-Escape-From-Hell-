@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,14 +25,13 @@ public class DeimosAttack : MonoBehaviour
 		rbody.velocity = new Vector2( speed, 0f );
 	}
 
-	/*void OnTriggerEnter2D( Collider2D col ) {
-		Destroyable destroyable = col.GetComponent<Destroyable>();
-
-		if( destroyable ) {
-			Destroy( destroyable.gameObject );
+	void OnTriggerEnter2D( Collider2D col ) {
+		SmallMonster monster = col.gameObject.GetComponent<SmallMonster>();
+		if( monster != null ) {
+			monster.TakeDamage( deimos.damage );
 		}
 
-		playerOwner.ProjectileDestroyed( this );
+		deimos.DestroyAttack( this );
 		Destroy( this.gameObject );
-	}*/
+	}
 }

@@ -41,7 +41,7 @@ public class DeimosController : MonoBehaviour {
 				animator.SetBool("Attack",true);
 			}
 		}
-        else
+		else
         	animator.SetBool("Attack",false);
 	}
 	// Update is called once per frame
