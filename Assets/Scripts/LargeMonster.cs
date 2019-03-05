@@ -11,6 +11,7 @@ public class LargeMonster : MonoBehaviour
 	public float distanceToAttack;
 	public Animator animator;
 	public float speed;
+	public 
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		DeimosController deimos = col.gameObject.GetComponent<DeimosController>();
@@ -28,9 +29,14 @@ public class LargeMonster : MonoBehaviour
 	}
 	public void Update(){
 
-		if(transform.position.x - deimos.transform.position.x <= distanceToAttack){
+		if(this.transform.position.x - deimos.transform.position.x <= distanceToAttack){
 			animator.SetBool("AttackMonster", true);
-			transform.position.x += Time.deltaTime*speed;
+			Vector3 newPos = this.transform.position;
+			newPos.x -=Time.deltaTime*speed;
+			this.transform.position = newPos;		//transform.position.x += Time.deltaTime*speed;
+		}
+		else{
+			animator.SetBool("AttackMonster", false);
 		}
 	}
 }

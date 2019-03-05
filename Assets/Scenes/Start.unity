@@ -133,6 +133,10 @@ MonoBehaviour:
   hp: 5
   dmg: 2
   push: 4
+  deimos: {fileID: 1826340032}
+  distanceToAttack: 4
+  animator: {fileID: 662236550}
+  speed: 2
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -414,6 +418,16 @@ MonoBehaviour:
   hp: 5
   dmg: 2
   push: 4
+  deimos: {fileID: 1826340032}
+  distanceToAttack: 4
+  animator: {fileID: 662236550}
+  speed: 2
+--- !u!95 &662236550 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2715543872521514771, guid: c6031b56e58b04e79a2b63abbcc26dff,
+    type: 3}
+  m_PrefabInstance: {fileID: 2715543871938019988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &688539758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20719,8 +20733,8 @@ PolygonCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.15, y: 0.1, z: 0.05, w: 0}
-    pivot: {x: 0.5759824, y: 0.049509745}
+    border: {x: 0, y: 0.1, z: 0.05, w: 0}
+    pivot: {x: 0.58961475, y: 0.051478073}
     oldSize: {x: 1.95, y: 3}
     newSize: {x: 0.39, y: 0.6}
     adaptiveTilingThreshold: 0.5
@@ -20885,7 +20899,7 @@ PrefabInstance:
     - target: {fileID: 2715543872521514769, guid: c6031b56e58b04e79a2b63abbcc26dff,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2715543872521514769, guid: c6031b56e58b04e79a2b63abbcc26dff,
         type: 3}
