@@ -152,7 +152,7 @@ MonoBehaviour:
   dmg: 2
   push: 4
   deimos: {fileID: 1826340032}
-  distanceToAttack: 4
+  distanceToAttack: 10
   animator: {fileID: 163853040}
   speed: 3
   health: {fileID: 163853043}
@@ -456,7 +456,7 @@ MonoBehaviour:
   dmg: 2
   push: 4
   deimos: {fileID: 1826340032}
-  distanceToAttack: 4
+  distanceToAttack: 10
   animator: {fileID: 662236550}
   speed: 3
   health: {fileID: 662236553}
