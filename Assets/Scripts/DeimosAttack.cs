@@ -26,7 +26,7 @@ public class DeimosAttack : MonoBehaviour
 	}
 
 	void OnTriggerEnter2D( Collider2D col ) {
-		SmallMonster monster = col.gameObject.GetComponent<SmallMonster>();
+		HealthMonsters monster = col.gameObject.GetComponent<HealthMonsters>();
 		if( monster != null ) {
 			monster.TakeDamage( deimos.damage );
 		}

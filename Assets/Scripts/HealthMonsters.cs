@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class HealthMonsters : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	float hp;
+	public HealthMonsters(float health){
+		hp  = health;
+	}
+	public void TakeDamage( float damageToTake ) 
+	{
+		hp -= damageToTake;
+
+		if( hp <= 0f ) {
+			Destroy( this.gameObject );
+		}
+	}
+
 }

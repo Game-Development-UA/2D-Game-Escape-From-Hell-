@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class SmallMonster : MonoBehaviour
 {
-	public float hp;
 	public float dmg;
 	public float push;
+	HealthMonsters health = new HealthMonsters(2f);
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		print( "Monster hit " + col.gameObject );
@@ -17,11 +17,11 @@ public class SmallMonster : MonoBehaviour
 		}
 	}
 
-	public void TakeDamage( float damageToTake ) {
+	/*public void TakeDamage( float damageToTake ) {
 		hp -= damageToTake;
 
 		if( hp <= 0f ) {
 			Destroy( this.gameObject );
 		}
-	}
+	}*/
 }

@@ -52,7 +52,7 @@ public class DeimosController : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D( Collision2D col ) {
-		SmallMonster monster = col.gameObject.GetComponent<SmallMonster>();
+		HealthMonsters monster = col.gameObject.GetComponent<HealthMonsters>();
 		if( monster != null ) {
 			monster.TakeDamage( this.damage );
 		}

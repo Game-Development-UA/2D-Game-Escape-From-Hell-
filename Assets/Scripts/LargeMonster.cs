@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class LargeMonster : MonoBehaviour
 {
-	public float hp;
+
 	public float dmg;
 	public float push;
 	public DeimosController deimos;
 	public float distanceToAttack;
 	public Animator animator;
 	public float speed;
-	public 
+	HealthMonsters health  = new HealthMonsters(5f);
+
+
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		DeimosController deimos = col.gameObject.GetComponent<DeimosController>();
@@ -20,13 +22,13 @@ public class LargeMonster : MonoBehaviour
 		}
 	}
 
-	public void TakeDamage( float damageToTake ) {
+	/*public void TakeDamage( float damageToTake ) {
 		hp -= damageToTake;
 
 		if( hp <= 0f ) {
 			Destroy( this.gameObject );
 		}
-	}
+	}*/
 	public void Update(){
 		if(Mathf.Abs(this.transform.position.x - deimos.transform.position.x)<= distanceToAttack){
 			animator.SetBool("AttackMonster", true);

@@ -153,8 +153,14 @@ MonoBehaviour:
   push: 4
   deimos: {fileID: 1826340032}
   distanceToAttack: 4
-  animator: {fileID: 662236550}
-  speed: 2
+  animator: {fileID: 163853040}
+  speed: 3
+--- !u!95 &163853040 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2715543872521514771, guid: c6031b56e58b04e79a2b63abbcc26dff,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083653438}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &163853043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -451,7 +457,7 @@ MonoBehaviour:
   deimos: {fileID: 1826340032}
   distanceToAttack: 4
   animator: {fileID: 662236550}
-  speed: 2
+  speed: 3
 --- !u!95 &662236550 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2715543872521514771, guid: c6031b56e58b04e79a2b63abbcc26dff,
@@ -20239,11 +20245,17 @@ PolygonCollider2D:
       - {x: -1.7427171, y: 1.7213202}
       - {x: -1.6784706, y: 0.021799862}
       - {x: -1.1660435, y: -0.34342578}
-      - {x: 1.1592498, y: -0.43779808}
-      - {x: 1.7314852, y: 0.015411769}
+      - {x: 1.1299763, y: -0.35943592}
+      - {x: 1.0597974, y: -0.13681962}
+      - {x: 1.0722289, y: -0.33965293}
+      - {x: 1.1736907, y: -0.31544244}
+      - {x: 1.7007475, y: 0.07245706}
+      - {x: 1.7314852, y: 0.123903856}
       - {x: 1.9120342, y: 0.38617727}
+      - {x: 2.0407403, y: 1.1746973}
       - {x: 1.9939504, y: 2.220923}
     - - {x: 0.89258516, y: 0.08501651}
+      - {x: 0.94231135, y: 0.11118859}
       - {x: 0.8698089, y: 0.7779798}
       - {x: 1.0942464, y: 0.60489327}
       - {x: 0.7060104, y: 0.1829708}
