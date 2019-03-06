@@ -28,8 +28,7 @@ public class LargeMonster : MonoBehaviour
 		}
 	}
 	public void Update(){
-
-		if(this.transform.position.x - deimos.transform.position.x <= distanceToAttack){
+		if(Mathf.Abs(this.transform.position.x - deimos.transform.position.x)<= distanceToAttack){
 			animator.SetBool("AttackMonster", true);
 			Vector3 newPos = this.transform.position;
 			newPos.x -=Time.deltaTime*speed;
