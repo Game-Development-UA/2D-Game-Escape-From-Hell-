@@ -11,9 +11,7 @@ public class LargeMonster : MonoBehaviour
 	public float distanceToAttack;
 	public Animator animator;
 	public float speed;
-	HealthMonsters health  = new HealthMonsters(5f);
-
-
+	public HealthMonsters health;
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		DeimosController deimos = col.gameObject.GetComponent<DeimosController>();

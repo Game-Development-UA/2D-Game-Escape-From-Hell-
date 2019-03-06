@@ -6,7 +6,7 @@ public class SmallMonster : MonoBehaviour
 {
 	public float dmg;
 	public float push;
-	HealthMonsters health = new HealthMonsters(2f);
+	HealthMonsters health;
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		print( "Monster hit " + col.gameObject );

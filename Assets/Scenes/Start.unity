@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 2
 --- !u!1 &163853037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2715543872521514775, guid: c6031b56e58b04e79a2b63abbcc26dff,
@@ -148,13 +149,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672a271da989e4a8eb76929303e0c501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
   dmg: 2
   push: 4
   deimos: {fileID: 1826340032}
   distanceToAttack: 4
   animator: {fileID: 163853040}
   speed: 3
+  health: {fileID: 163853043}
 --- !u!95 &163853040 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2715543872521514771, guid: c6031b56e58b04e79a2b63abbcc26dff,
@@ -173,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 5
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,13 +453,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672a271da989e4a8eb76929303e0c501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
   dmg: 2
   push: 4
   deimos: {fileID: 1826340032}
   distanceToAttack: 4
   animator: {fileID: 662236550}
   speed: 3
+  health: {fileID: 662236553}
 --- !u!95 &662236550 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2715543872521514771, guid: c6031b56e58b04e79a2b63abbcc26dff,
@@ -476,6 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 5
 --- !u!1001 &688539758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20052,6 +20055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 2
 --- !u!1001 &1212628891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20145,6 +20149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 2
 --- !u!1 &1229099820 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7639144948404841900, guid: 5d763586c01f9435b8c00f4ada2a4461,
@@ -20163,6 +20168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 2
 --- !u!1 &1265578916
 GameObject:
   m_ObjectHideFlags: 0
@@ -20386,6 +20392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hp: 2
 --- !u!1 &1604875692
 GameObject:
   m_ObjectHideFlags: 0

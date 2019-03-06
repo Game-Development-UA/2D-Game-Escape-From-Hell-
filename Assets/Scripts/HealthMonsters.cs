@@ -5,10 +5,8 @@ using UnityEngine;
 public class HealthMonsters : MonoBehaviour
 {
 
-	float hp;
-	public HealthMonsters(float health){
-		hp  = health;
-	}
+	public float hp;
+	
 	public void TakeDamage( float damageToTake ) 
 	{
 		hp -= damageToTake;
