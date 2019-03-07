@@ -71,6 +71,9 @@ public class DeimosController : MonoBehaviour {
 			stunned = true;
 		}
 	}
+	public void TakeDamageFrom(float damageToTake){
+		health -= damageToTake;
+	}
 	public void DestroyAttack( DeimosAttack attackDestroyed ) {
 		attacks.Remove( attackDestroyed );
 	}

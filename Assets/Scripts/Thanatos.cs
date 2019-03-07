@@ -14,6 +14,7 @@ public class Thanatos : MonoBehaviour
 	public Transform attackSpawnLoc;
 	public int maxAttacks;
 	public DeimosController deimos;
+	public ThanatosAttack attackPrefab;
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		DeimosController deimos = col.gameObject.GetComponent<DeimosController>();
@@ -24,12 +25,15 @@ public class Thanatos : MonoBehaviour
 	public void Update(){
 		if(this.transform.position.x - deimos.transform.position.x <= distanceToAttack){
 			if( attacks.Count < maxAttacks ) {
-				ThanatosAttack newAttack = Instantiate<ThanatosAttack>(ThanatosAttack);
+				ThanatosAttack newAttack = Instantiate<ThanatosAttack>(attackPrefab);
 				newAttack.transform.position = attackSpawnLoc.position;
-				newAttack.deimos = this;
+				newAttack.boss = this;
 				attacks.Add(newAttack);
 			}
 		}
+	}
+	public void DestroyAttack( ThanatosAttack attackDestroyed ) {
+		attacks.Remove( attackDestroyed );
 	}
 
 }

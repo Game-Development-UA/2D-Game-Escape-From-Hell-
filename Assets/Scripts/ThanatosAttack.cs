@@ -4,15 +4,33 @@ using UnityEngine;
 
 public class ThanatosAttack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	public Thanatos boss;
+	public Rigidbody2D rbody;
+	public float speed;
+	public float lifetime;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	float timer;
+
+	void Update() {
+		timer += Time.deltaTime;
+
+		if( timer > lifetime ) {
+			boss.DestroyAttack( this );
+			Destroy( this.gameObject );
+		}
+	}
+
+	void FixedUpdate() {
+		rbody.velocity = new Vector2( -speed, 0f );
+	}
+
+	void OnTriggerEnter2D( Collider2D col ) {
+		DeimosController deimos = col.gameObject.GetComponent<DeimosController>();
+		if( deimos != null ) {
+			deimos.TakeDamageFrom( boss.dmg );
+		}
+
+		boss.DestroyAttack( this );
+		Destroy( this.gameObject );
+	}
 }
