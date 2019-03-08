@@ -30,10 +30,17 @@ public class Thanatos : MonoBehaviour
 				newAttack.boss = this;
 				attacks.Add(newAttack);
 			}
+			else{
+				int attackPosition = Random.Range(1,5);
+				ChangeSpawnLocation(attackPosition);
+			}
 		}
 	}
 	public void DestroyAttack( ThanatosAttack attackDestroyed ) {
 		attacks.Remove( attackDestroyed );
+	}
+	public void ChangeSpawnLocation(int attackPosition){
+		
 	}
 
 }
