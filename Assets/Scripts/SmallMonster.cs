@@ -9,7 +9,6 @@ public class SmallMonster : MonoBehaviour
 	public HealthMonsters health;
 
 	void OnCollisionEnter2D( Collision2D col ) {
-		print( "Monster hit " + col.gameObject );
 		DeimosController deimos = col.gameObject.GetComponent<DeimosController>();
 
 		if( deimos ) {

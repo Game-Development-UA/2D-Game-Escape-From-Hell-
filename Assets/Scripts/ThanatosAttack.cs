@@ -29,7 +29,6 @@ public class ThanatosAttack : MonoBehaviour
 		if( deimos != null ) {
 			deimos.TakeDamageFrom( boss.dmg );
 		}
-
 		boss.DestroyAttack( this );
 		Destroy( this.gameObject );
 	}

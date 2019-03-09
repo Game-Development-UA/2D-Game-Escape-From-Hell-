@@ -13,7 +13,7 @@ public class Thanatos : MonoBehaviour
 	public List<ThanatosAttack> attacks = new List<ThanatosAttack>();
 	public List<Transform> attackSpawnLoc = new List<Transform>();
 	public int spawnLoc;
-	//public int maxAttacks;
+	public int maxAttacks;
 	public DeimosController deimos;
 	public ThanatosAttack attackPrefab;
 
@@ -28,15 +28,17 @@ public class Thanatos : MonoBehaviour
 		
 		if(this.transform.position.x - deimos.transform.position.x <= distanceToAttack){
 			timer += Time.deltaTime;
-			if( timer < intervalToAttack) {
+			if( timer >= intervalToAttack) {
 				ThanatosAttack newAttack = Instantiate<ThanatosAttack>(attackPrefab);
 				newAttack.transform.position = attackSpawnLoc[spawnLoc].position;
 				newAttack.boss = this;
 				attacks.Add(newAttack);
+				maxAttacks++;
 				timer = 0f;
 			}
 			else{
 				spawnLoc = Random.Range(0,5);
+				maxAttacks = 0;
 			}
 		}
 		else{
