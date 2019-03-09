@@ -21041,6 +21041,16 @@ PrefabInstance:
       propertyPath: deimos
       value: 
       objectReference: {fileID: 1826340032}
+    - target: {fileID: 1470246477967300295, guid: 7e5863214103d46d288c00c1156584da,
+        type: 3}
+      propertyPath: maxAttacks
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1470246477967300295, guid: 7e5863214103d46d288c00c1156584da,
+        type: 3}
+      propertyPath: intervalToAttack
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1470246478619412723, guid: 7e5863214103d46d288c00c1156584da,
         type: 3}
       propertyPath: m_LocalPosition.x
