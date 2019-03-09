@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,7 +11,8 @@ public class Thanatos : MonoBehaviour
 	public float intervalToChangePos;
 	public float intervalToAttack;
 	public List<ThanatosAttack> attacks = new List<ThanatosAttack>();
-	public Transform attackSpawnLoc;
+	public List<Transform> attackSpawnLoc = new List<Transform>();
+	public int spawnLoc;
 	public int maxAttacks;
 	public DeimosController deimos;
 	public ThanatosAttack attackPrefab;
@@ -22,25 +23,27 @@ public class Thanatos : MonoBehaviour
 			deimos.TakeDamageFrom( this.transform, dmg, push );
 		}
 	}
-	public void Update(){
+	float timer = 0;
+	public void Update(){	
+		
 		if(this.transform.position.x - deimos.transform.position.x <= distanceToAttack){
-			if( attacks.Count < maxAttacks ) {
+			timer += Time.deltaTime;
+			if( attacks.Count < maxAttacks) {
 				ThanatosAttack newAttack = Instantiate<ThanatosAttack>(attackPrefab);
-				newAttack.transform.position = attackSpawnLoc.position;
+				newAttack.transform.position = attackSpawnLoc[spawnLoc].position;
 				newAttack.boss = this;
 				attacks.Add(newAttack);
 			}
 			else{
-				int attackPosition = Random.Range(1,5);
-				ChangeSpawnLocation(attackPosition);
+				spawnLoc = Random.Range(1,5);
 			}
+		}
+		else{
+			timer = 0;
 		}
 	}
 	public void DestroyAttack( ThanatosAttack attackDestroyed ) {
 		attacks.Remove( attackDestroyed );
 	}
-	public void ChangeSpawnLocation(int attackPosition){
-		
-	}
-
+	
 }
