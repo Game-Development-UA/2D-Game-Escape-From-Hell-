@@ -37,7 +37,7 @@ public class Thanatos : MonoBehaviour
 				timer = 0f;
 			}
 			else{
-				spawnLoc = Random.Range(0,5);
+				spawnLoc = Random.Range(0,4);
 				maxAttacks = 0;
 			}
 		}

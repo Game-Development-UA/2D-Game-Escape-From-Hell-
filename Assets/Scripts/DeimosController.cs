@@ -12,7 +12,7 @@ public class DeimosController : MonoBehaviour {
 	public float health;
 	public float damage;
 	public float stunnedVelocityThreshold;
-
+	public AudioSource attackSound;
 	public int maxAttacks;
 
 	public Transform attackSpawnLoc;
@@ -39,10 +39,13 @@ public class DeimosController : MonoBehaviour {
 				newAttack.deimos = this;
 				attacks.Add(newAttack);
 				animator.SetBool("Attack",true);
+				attackSound.Play();
 			}
 		}
-		else
+		else{
         	animator.SetBool("Attack",false);
+        	attackSound.Stop();
+		}
 	}
 	// Update is called once per frame
 	void FixedUpdate () {
