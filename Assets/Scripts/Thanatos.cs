@@ -28,16 +28,16 @@ public class Thanatos : MonoBehaviour
 		
 		if(this.transform.position.x - deimos.transform.position.x <= distanceToAttack){
 			timer += Time.deltaTime;
-			if( timer <= intervalToAttack) {
+			if( timer < intervalToAttack) {
 				ThanatosAttack newAttack = Instantiate<ThanatosAttack>(attackPrefab);
 				newAttack.transform.position = attackSpawnLoc[spawnLoc].position;
 				newAttack.boss = this;
 				attacks.Add(newAttack);
+				timer = 0f;
 			}
 			else{
 				spawnLoc = Random.Range(0,5);
 			}
-			timer = 0f;
 		}
 		else{
 			timer = 0f;
