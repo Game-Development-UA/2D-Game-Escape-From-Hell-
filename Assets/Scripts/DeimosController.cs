@@ -9,11 +9,13 @@ public class DeimosController : MonoBehaviour {
 	public Animator animator;
 	public float moveThreshHold;
 	public float jumpPower;
+	public float maxHp;
 	public float health;
 	public float damage;
 	public float stunnedVelocityThreshold;
 	public AudioSource attackSound;
 	public int maxAttacks;
+	public DeimosHealth healthBar;
 
 	public Transform attackSpawnLoc;
 
@@ -63,6 +65,7 @@ public class DeimosController : MonoBehaviour {
 
 	public void TakeDamageFrom( Transform enemy, float damageToTake, float forceToPush ) {
 		health -= damageToTake;
+		healthBar.ReduceHp(health,maxHp);
 
 		Vector3 intervalFromEnemy = this.transform.position - enemy.position;
 		intervalFromEnemy.y = 0f; // flatten the force so that Deimos is only pushed left or right, never up or down
