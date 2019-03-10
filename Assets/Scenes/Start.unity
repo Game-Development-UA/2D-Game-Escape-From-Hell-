@@ -132,6 +132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   thanatos: {fileID: 0}
+  dyingSound: {fileID: 0}
 --- !u!1 &163853037 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2715543872521514775, guid: c6031b56e58b04e79a2b63abbcc26dff,
@@ -177,6 +178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 5
   thanatos: {fileID: 0}
+  dyingSound: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,6 +564,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 5
   thanatos: {fileID: 0}
+  dyingSound: {fileID: 0}
 --- !u!1001 &688539758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -634,6 +637,11 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 22884763}
+    - target: {fileID: 2282409869678475903, guid: 5d763586c01f9435b8c00f4ada2a4461,
+        type: 3}
+      propertyPath: MinDistance
+      value: 14.486364
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d763586c01f9435b8c00f4ada2a4461, type: 3}
 --- !u!4 &688539759 stripped
@@ -20146,6 +20154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   thanatos: {fileID: 0}
+  dyingSound: {fileID: 0}
 --- !u!1001 &1212628891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20218,6 +20227,11 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1229099823}
+    - target: {fileID: 2282409869678475903, guid: 5d763586c01f9435b8c00f4ada2a4461,
+        type: 3}
+      propertyPath: MinDistance
+      value: 16.707767
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d763586c01f9435b8c00f4ada2a4461, type: 3}
 --- !u!4 &1212628892 stripped
@@ -20246,6 +20260,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   thanatos: {fileID: 0}
+  dyingSound: {fileID: 0}
 --- !u!1 &1229099820 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7639144948404841900, guid: 5d763586c01f9435b8c00f4ada2a4461,
@@ -20266,6 +20281,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   thanatos: {fileID: 0}
+  dyingSound: {fileID: 0}
 --- !u!1 &1522265025 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7639144948404841900, guid: 5d763586c01f9435b8c00f4ada2a4461,
@@ -20286,6 +20302,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   thanatos: {fileID: 0}
+  dyingSound: {fileID: 0}
 --- !u!1 &1604875692
 GameObject:
   m_ObjectHideFlags: 0
@@ -20413,6 +20430,11 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1217943452}
+    - target: {fileID: 2282409869678475903, guid: 5d763586c01f9435b8c00f4ada2a4461,
+        type: 3}
+      propertyPath: MinDistance
+      value: 26.797392
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d763586c01f9435b8c00f4ada2a4461, type: 3}
 --- !u!4 &1669565135 stripped
@@ -20884,6 +20906,11 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1094820326}
+    - target: {fileID: 2282409869678475903, guid: 5d763586c01f9435b8c00f4ada2a4461,
+        type: 3}
+      propertyPath: MinDistance
+      value: 25.397964
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d763586c01f9435b8c00f4ada2a4461, type: 3}
 --- !u!4 &1722165719 stripped
@@ -21600,5 +21627,10 @@ PrefabInstance:
       propertyPath: health
       value: 
       objectReference: {fileID: 1522265028}
+    - target: {fileID: 2282409869678475903, guid: 5d763586c01f9435b8c00f4ada2a4461,
+        type: 3}
+      propertyPath: MinDistance
+      value: 21.21031
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d763586c01f9435b8c00f4ada2a4461, type: 3}

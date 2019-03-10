@@ -8,6 +8,7 @@ public class HealthMonsters : MonoBehaviour
 
 	public float hp;
 	public Thanatos thanatos;
+	public AudioSource dyingSound;
 	
 	public void TakeDamage( float damageToTake ) 
 	{
@@ -17,6 +18,9 @@ public class HealthMonsters : MonoBehaviour
 			Destroy( this.gameObject );
 			if(thanatos!=null){
 				SceneManager.LoadScene(2);
+			}
+			else{
+				dyingSound.Play();
 			}
 		}
 	}
