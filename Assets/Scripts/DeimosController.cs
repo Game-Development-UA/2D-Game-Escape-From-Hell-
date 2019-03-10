@@ -79,6 +79,7 @@ public class DeimosController : MonoBehaviour {
 	}
 	public void TakeDamageFrom(float damageToTake){
 		health -= damageToTake;
+		healthBar.ReduceHp(health,maxHp);
 	}
 	public void DestroyAttack( DeimosAttack attackDestroyed ) {
 		attacks.Remove( attackDestroyed );
