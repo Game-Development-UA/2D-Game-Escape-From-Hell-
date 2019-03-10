@@ -27,7 +27,10 @@ public class DeimosController : MonoBehaviour {
 
 	void Update(){
 		if( stunned ) {
-			if( player.velocity.sqrMagnitude < stunnedVelocityThreshold ) stunned = false;
+			if( player.velocity.sqrMagnitude < stunnedVelocityThreshold )
+			{
+				stunned = false;
+			} 
 		}
 
 		animator.SetBool("Moving",Mathf.Abs(player.velocity.x)  > moveThreshHold);
@@ -76,10 +79,12 @@ public class DeimosController : MonoBehaviour {
 		if( forceToPush > 0f ) {
 			stunned = true;
 		}
+		animator.SetBool("TakeDamage",true);
 	}
 	public void TakeDamageFrom(float damageToTake){
 		health -= damageToTake;
 		healthBar.ReduceHp(health,maxHp);
+		animator.SetBool("TakeDamage",true);
 	}
 	public void DestroyAttack( DeimosAttack attackDestroyed ) {
 		attacks.Remove( attackDestroyed );

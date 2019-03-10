@@ -16,6 +16,7 @@ public class Thanatos : MonoBehaviour
 	public int maxAttacks;
 	public DeimosController deimos;
 	public ThanatosAttack attackPrefab;
+	public AudioSource attackSound;
 
 	void OnCollisionEnter2D( Collision2D col ) {
 		DeimosController deimos = col.gameObject.GetComponent<DeimosController>();
@@ -35,6 +36,7 @@ public class Thanatos : MonoBehaviour
 				attacks.Add(newAttack);
 				maxAttacks++;
 				timer = 0f;
+				attackSound.Play();
 			}
 			else{
 				spawnLoc = Random.Range(0,4);
