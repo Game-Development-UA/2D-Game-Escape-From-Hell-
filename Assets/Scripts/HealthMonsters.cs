@@ -15,12 +15,10 @@ public class HealthMonsters : MonoBehaviour
 		hp -= damageToTake;
 
 		if( hp <= 0f ) {
+			dyingSound.Play();
 			Destroy( this.gameObject );
 			if(thanatos!=null){
 				SceneManager.LoadScene(2);
-			}
-			else{
-				dyingSound.Play();
 			}
 		}
 	}

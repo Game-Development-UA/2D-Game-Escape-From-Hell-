@@ -14,6 +14,7 @@ public class DeimosController : MonoBehaviour {
 	public float damage;
 	public float stunnedVelocityThreshold;
 	public AudioSource attackSound;
+	public AudioSource takeDamageSound;
 	public int maxAttacks;
 	public DeimosHealth healthBar;
 
@@ -81,10 +82,13 @@ public class DeimosController : MonoBehaviour {
 			stunned = true;
 		}
 		animator.SetBool("TakeDamage",true);
+		takeDamageSound.Play();
+
 	}
 	public void TakeDamageFrom(float damageToTake){
 		health -= damageToTake;
 		healthBar.ReduceHp(health,maxHp);
+		takeDamageSound.Play();
 	}
 	public void DestroyAttack( DeimosAttack attackDestroyed ) {
 		attacks.Remove( attackDestroyed );

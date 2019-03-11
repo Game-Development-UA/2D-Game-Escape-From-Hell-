@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7639144948404841901}
   - component: {fileID: 7639144948404841897}
   - component: {fileID: 7639144948404841903}
+  - component: {fileID: 2838095664573070680}
   - component: {fileID: 2282409869678475903}
   m_Layer: 0
   m_Name: SmallMonster
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dmg: 1
   push: 5
-  health: {fileID: 0}
+  health: {fileID: 2838095664573070680}
 --- !u!60 &7639144948404841903
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -133,6 +134,21 @@ PolygonCollider2D:
       - {x: 0.6085777, y: -0.50390655}
       - {x: 0.7224195, y: -0.13385159}
       - {x: 0.43968558, y: 0.36012334}
+--- !u!114 &2838095664573070680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7639144948404841900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70d11cd39f760453d9fd9c7d06e3fc63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 2
+  thanatos: {fileID: 0}
+  dyingSound: {fileID: 2282409869678475903}
 --- !u!82 &2282409869678475903
 AudioSource:
   m_ObjectHideFlags: 0
