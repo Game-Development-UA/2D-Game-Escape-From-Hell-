@@ -98,6 +98,7 @@ MonoBehaviour:
   dmg: 1
   push: 5
   health: {fileID: 2838095664573070680}
+  dyingSound: {fileID: 2282409869678475903}
 --- !u!60 &7639144948404841903
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 2
   thanatos: {fileID: 0}
-  dyingSound: {fileID: 2282409869678475903}
+  dyingPrefab: {fileID: 0}
 --- !u!82 &2282409869678475903
 AudioSource:
   m_ObjectHideFlags: 0
@@ -160,7 +161,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 143f8d2b0fc874020bc86491a83f6eea, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
