@@ -179,7 +179,7 @@ MonoBehaviour:
   deimos: {fileID: 0}
   distanceToAttack: 15
   animator: {fileID: 2715543872521514771}
-  speed: 5
+  speed: 7
   health: {fileID: 3157908037572674191}
 --- !u!114 &3157908037572674191
 MonoBehaviour:

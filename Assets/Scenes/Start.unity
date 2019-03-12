@@ -219,9 +219,9 @@ MonoBehaviour:
   dmg: 2
   push: 4
   deimos: {fileID: 1826340032}
-  distanceToAttack: 10
+  distanceToAttack: 15
   animator: {fileID: 163853040}
-  speed: 3
+  speed: 5
   health: {fileID: 163853043}
 --- !u!82 &163853039
 AudioSource:
@@ -340,7 +340,6 @@ MonoBehaviour:
   hp: 5
   thanatos: {fileID: 0}
   dyingPrefab: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!1 &170076733
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +751,16 @@ PrefabInstance:
       propertyPath: deimos
       value: 
       objectReference: {fileID: 1826340032}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: distanceToAttack
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2715543872521514768, guid: c6031b56e58b04e79a2b63abbcc26dff,
         type: 3}
       propertyPath: m_SortingOrder
@@ -831,6 +840,16 @@ PrefabInstance:
       propertyPath: deimos
       value: 
       objectReference: {fileID: 1826340032}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: distanceToAttack
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2715543872521514768, guid: c6031b56e58b04e79a2b63abbcc26dff,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1050,9 +1069,9 @@ MonoBehaviour:
   dmg: 2
   push: 4
   deimos: {fileID: 1826340032}
-  distanceToAttack: 10
+  distanceToAttack: 15
   animator: {fileID: 662236550}
-  speed: 3
+  speed: 5
   health: {fileID: 662236553}
 --- !u!82 &662236549
 AudioSource:
@@ -1171,7 +1190,6 @@ MonoBehaviour:
   hp: 5
   thanatos: {fileID: 0}
   dyingPrefab: {fileID: 0}
-  animator: {fileID: 0}
 --- !u!1001 &688539758
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27540,6 +27558,16 @@ PrefabInstance:
       propertyPath: deimos
       value: 
       objectReference: {fileID: 1826340032}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: distanceToAttack
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2715543872521514768, guid: c6031b56e58b04e79a2b63abbcc26dff,
         type: 3}
       propertyPath: m_SortingOrder
@@ -28566,6 +28594,16 @@ PrefabInstance:
       propertyPath: deimos
       value: 
       objectReference: {fileID: 1826340032}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8432201101853022401, guid: c6031b56e58b04e79a2b63abbcc26dff,
+        type: 3}
+      propertyPath: distanceToAttack
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 2715543872521514768, guid: c6031b56e58b04e79a2b63abbcc26dff,
         type: 3}
       propertyPath: m_SortingOrder
