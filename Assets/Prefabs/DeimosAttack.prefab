@@ -125,7 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rbody: {fileID: 6038557605677597264}
   speed: 15
-  lifetime: 0.8
+  lifetime: 0.7
   deimos: {fileID: 0}
 --- !u!50 &6038557605677597264
 Rigidbody2D:

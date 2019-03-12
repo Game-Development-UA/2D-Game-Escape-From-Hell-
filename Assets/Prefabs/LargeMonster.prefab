@@ -177,9 +177,9 @@ MonoBehaviour:
   dmg: 2
   push: 2
   deimos: {fileID: 0}
-  distanceToAttack: 10
+  distanceToAttack: 15
   animator: {fileID: 2715543872521514771}
-  speed: 3
+  speed: 5
   health: {fileID: 3157908037572674191}
 --- !u!114 &3157908037572674191
 MonoBehaviour:
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 5
   thanatos: {fileID: 0}
-  dyingSound: {fileID: 8455556231989465011}
+  dyingPrefab: {fileID: 0}
 --- !u!82 &8455556231989465011
 AudioSource:
   m_ObjectHideFlags: 0
